@@ -1,0 +1,12 @@
+import static javax.swing.JOptionPane.*;
+ class celsius {
+    public static void main(String[] args) {
+
+        String fahrenheitlest = showInputDialog("tast inn antall fahrenheit: ");
+        double fahrenheit = Double.parseDouble(fahrenheitlest);
+        double  celsius =(( 5 *(fahrenheit - 32.0)) / 9.0);
+        String utskrift = fahrenheitlest + " grader fahrenheit er lik " + celsius + " Celcius";
+        showMessageDialog(null, utskrift);
+
+    }
+}
